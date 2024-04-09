@@ -1,0 +1,86 @@
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px;
+  padding-top: 50px;
+}
+
+.gallery__item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__item > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery__item--hor {
+  grid-column: span 2;
+}
+
+.gallery__item--vert {
+  grid-row: span 2;
+}
+
+.gallery__item--lg {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try try</title>
+    <link rel="stylesheet" href="../TRYYY/try,css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+          <div class="gallery__item gallery__item--hor">
+            <img src="../leps 500x500.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 300x300.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 600x600.jpg" alt="">
+          </div>
+          <div class="gallery__item gallery__item--vert">
+            <img src="../leps 300x300 2.jpg" alt="">
+          </div>
+          <div class="gallery__item gallery__item--lg">
+            <img src="../leps 300x300 3.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 300x300 4.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 600x600 2.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 300x300 5.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 300x300 6.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="../leps 300x300 7.jpg" alt="">
+          </div>
+      </div>
+</body>
+</html>
