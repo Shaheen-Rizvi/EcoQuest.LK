@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif ;
+}
+
+body{
+  background: url(../images/bgneww.jpg);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*background: url(../TRYYY/images/lepshome.jpg);*/
+  background-size: cover;
+  background-position: center;
+}
+
+.logout-btn-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logout-btn {
+  background-color: #ccc; /* grayish color */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* round edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #4CAF50; /* green on hover */
+}
+
+p{
+  color: rgb(0, 0, 0);
+}
+
+#editContentButton {
+  font-size: 35px;
+  background-color: #3adb37;
+  border-radius: 30px;
+  position: fixed;
+  right: 20px; /* Adjust as needed */
+  top: 95%; /* Adjust as needed */
+  transform: translateY(-50%);
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+
+.h2main{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline 6px solid #009900;
+  text-underline-offset: 10px;
+}
+
+/*.mainh2::after{
+  content:"";
+  position: absolute;
+  width: 40%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(42, 192, 142);
+  margin-left: 550px;
+  z-index: -10;
+  }*/
+
+.section1{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*background: url(../TRYYY/images/lepshome.jpg);*/
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  position: relative;
+  top: 0%;
+  width:100% ;
+  padding: 30px 100px;
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*header .logo{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}*/
+
+/*Navigation Bar*/
+.navyala{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 150px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active, /*active means which is active*/
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{ /*an attribute selector that shows  It specifies that the <input> elements should have a type attribute with the value "checkbox".*/
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{/* selects all <ul> elements that arre siblings of the input element with th e ID click when it is checkd.*/
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: aquamarine;
+  }
+  
+}
+/*
+/**/
+
+.content{
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2{
+  color: rgb(42, 192, 142);
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.content .info h2 span{
+  color: rgb(42, 192, 142);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .info p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn{
+  color: #fff;
+  background: rgb(42, 192, 142);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: chartreuse;
+}
+
+.content .info-btn:hover{
+  background: chartreuse;
+}
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  position: relative;
+  color: #ffffff;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child){/* pseudo-class that selects elements that are not the last child of their parent*/
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.5);
+}
+
+@media (max-width: 960px){
+  header .navigation{
+    display: none;
+  }
+  header .logo{
+    position: absolute;
+    bottom: -6px;
+  }
+  .content .info h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .content .info h2 span{
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:560px){
+  .content .info h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .content .info h2 span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+
+.imgleps{
+  max-width: 320px;
+  float: left;
+  border: 3px solid;
+  border-radius: 10px;
+  margin-right: 15px;
+  display: flex;
+}
+
+.wrapper{
+ margin: 125px auto;
+ width: 70%;
+}
+
+.text-box{
+ color: rgb(0, 0, 0);
+ position: relative;
+ font-weight: bolder;
+}
+
+.text-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for transparency */
+  z-index: -1; /* Place the pseudo-element behind the text content */
+  border-radius: 10px; /* Match the border-radius of the text box */
+  height: 215px;
+}
+
+.text-box h2{
+ font-size: 42px;
+}
+
+.text-box p{
+ font-size: 20px;
+}
+
+.logo {
+  display: block;
+  max-width: 150px;
+  height: auto; 
+  cursor: pointer;
+  background-image: url(../images/logo_nobg.png); /*this is for the logo to be responsive and when clicked, it goes to home page*/
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.h2yala{
+  color: #fff;
+}
+
+.my-container * {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #eeeeea;
+}
+
+.wrapper2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+  color: aquamarine;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon { /* > child combinatior, selects the direct children, -- is a class selector*/
+  background: #223;
+  color: aquamarine;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 90px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.description h4 {
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important; /*important is used to prioritise it*/
+}
+
+.card[for="c1"] {
+  background-image: url('../images/yala-main-entrance.jpg'); /*[] are attribute selectors*/
+}
+.card[for="c2"] {
+  background-image: url('../images/Yala-National-Park-Leopard-02SLTPB.avif');
+}
+.card[for="c3"] {
+  background-image: url('../images/peaacockkk.jpg');
+}
+.card[for="c4"] {
+  background-image: url('../images/elephantttt.jpg');
+}
+/*Bottom Spinner*/
+.mainyala3{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content2yala{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content2{
+position: relative;
+width: 230px;
+height: 230px;
+transform-style: preserve-3d;
+animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(-370deg);
+  }
+}
+
+.content2 span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(370px);/*this is used for the 3d property, i is a custom property*/
+}
+
+.content2 span img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+
+.content2 span img:hover{
+  transform: translateY(30px) scale(1.2);
+  cursor: pointer;
+}
+
+.bottomp{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.mapyala iframe{
+  width: 97%;
+  margin-right: 20px;
+  margin-left:20px ;
+  padding-top: 10px;
+  height: 50vh;
+}
+
+.figyala{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+/*footer*/
+.bodyfooter{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bodyfull{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+}
+.rowf{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ulf{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+
+.newsletter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsletter h2{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-right: 25px;
+}
+
+
+.newsletter form{
+  margin: 20px 0px;
+}
+
+.newsletter form input{
+  height: 40px;
+  width: 17vw;
+  padding: 0 15px;
+  outline: none;
+}
+
+.newsletter form button{
+  height: 40px;
+  width: 5rem;
+  color:white;
+  background-color: #3adb37; 
+  border: none;
+}
+
+.newsletter form input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+}
+
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: aquamarine;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){/* this targets list items <li> that are children of the unoderd lists ul within elements with t he class footer-col,
+                                    except fr the last list item in each list. This is excluding the 
+                                    last child in each list from the style applied.*/
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #46a36a;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}

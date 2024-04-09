@@ -1,0 +1,938 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; 
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg_patternn.png);
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Overlock SC', sans-serif;
+    
+}
+
+.logout-btn-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logout-btn {
+    background-color: #ccc; /* grayish color */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* round edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #4CAF50; /* green on hover */
+}
+
+.main2 p{
+    font-size: 25px;
+}
+
+.main2 h3{
+    font-size: 30px;
+}
+
+header {
+  background-color: #aedfad; 
+  padding: 15px;
+  text-align: center;
+  background-image: url(../images/banner\ final\ \(2\).png);
+  width: auto;
+} 
+
+
+#editContentButton {
+    font-size: 35px;
+    background-color: #3adb37;
+    border-radius: 30px;
+    position: fixed;
+    right: 20px; /* Adjust as needed */
+    top: 95%; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 9999; /* Ensure it's above other elements */
+    display: flex;
+}
+
+
+.logo {
+    display: block;
+    max-width: 150px;
+    height: auto; 
+    cursor: pointer;
+    background-image: url(../images/logo_nobg.png); /*this is for the logo to be responsive and when clicked, it goes to home page*/
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.main3 .read-more{
+    display: inline-block; /* this is to wrap text and content to give space and set them apart when next to other content*/
+    padding: 10px 20px;
+    color: #030303;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.main3 .read-more:hover{
+    background-color: #aedfad;
+}
+
+header h2 {
+    color: #2e3d49; 
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    color: #2e3d49; 
+}
+
+nav {
+    display: flex;
+    background-color: #00ff95; 
+    padding: 10px;
+    width: auto;
+    position: sticky;
+    top: 0px;
+    border-bottom: #009900;
+    border-top: #009900;
+    font-weight: bolder;
+    z-index: 10;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    padding-right: 0px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color:rgb(25, 221, 25)
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 247, 5);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.container23 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    padding-top: 10px;
+    background:linear-gradient(grey,#aedfad) ; /* Add a background color for better visibility */
+  }
+
+  .card23 {
+    width: 100%; /* width to 100% to take the full width of the screen */
+    max-width: 600px; /* maximum width for each card */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2px; /*  for spacing between cards */ 
+  }
+
+  .card23 img {
+    width: 100%;
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+  }
+
+  .card-overlay23 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0),#aedfad);
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .card23 h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .card23 p {
+    margin: 10px 0 0;
+    font-size: 1em;
+  }
+
+.cardbox{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    background: linear-gradient(#aedfad,#ddd);
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgb(114, 113, 113);
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #aedfad;
+}
+
+@media screen and (max-width: 1247px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+.col{
+    flex-basis: calc(50% - 30px); /*50% is the initial size of the container, and then it decreases bt 30px*/
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 15px;
+    justify-content: space-around;
+ 
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: none;/*control the decoration of the text*/
+    color: black;
+}
+
+.h21{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    margin-right: 50px;
+    justify-content: space-around;
+    transition: transform 0.5s, ease-in-out;
+}
+
+.card p{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.card1{
+    background-image: url(../images/card_1.jpg);
+}
+
+.card2{
+    background-image: url(../images/card_2.jpg);
+}
+
+.card3{
+    background-image: url(../images/card5.jpg);
+}
+
+ 
+.card:hover{
+    transform: translateY(-10px);/*move in the y axis by -10px*/
+    opacity: 0.8;
+}
+
+.li1 {
+    background-color: rgba(169, 169, 169, 0.5); /*0.5 marks the transparency*/
+    padding: 10px; 
+    margin: 5px 0; 
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-style: oblique;
+    font-family: cursive;
+    font-size: large;
+}
+  
+
+.main2{
+    text-align: center;
+}
+
+.main3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.main3h1{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline 6px solid #009900;
+    text-underline-offset: 10px;/* the gap bw the text and the line*/
+}
+
+.map3 iframe{
+    width: 97%;
+    margin-right: 20px;
+    margin-left:5px ;
+}
+
+
+
+/*.main3h1::after{
+content:"";
+position: absolute;
+width: 50%;
+height: 4px;
+display: block;
+margin: 0 auto;
+background-color: #009900;
+margin-left: 485px;
+z-index: -10;
+}*/
+
+/*.main4h1::after{
+    content:"";
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #009900;
+    margin-left: 735px;
+    z-index: -10;
+}
+*/
+
+/*.main5h1::after{
+    content:"";
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #009900;
+    margin-left: 735px;
+    z-index: -10;
+}*/
+
+.main4 h1{
+    font-size: 35px;
+    text-decoration: underline 6px solid #009900;
+    text-underline-offset: 10px;
+    
+}
+
+
+.main4 {
+    align-items: center;
+    text-align: center;
+}
+
+.main4 p{
+    font-size: 25px;
+}
+
+.main5h1{
+    align-items: center;
+    text-align: center;
+    text-decoration: underline 6px solid #009900;
+    text-underline-offset: 10px;
+}
+
+.forest{
+    max-width: 75%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    border-radius: 200px;
+    box-shadow: 0 0 20px rgb(114, 113,113);
+    padding-bottom: 25px;
+    padding-top: 20px;
+    align-items: center;
+    margin-left:  17%;
+    margin-right: 7%;
+}
+
+@media screen and (max-width: 900px){
+    .forest{
+        margin-left: -1%;
+    }
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;/* to send back*/
+}
+
+.flex-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 20px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -10;
+}
+
+.gallery:hover{
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.gallery-item {
+    width: 500px;
+    margin: 5pxpx;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.depmap{
+    width: 70%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.image-frame {
+    border: 7px solid #333;
+    padding: 5px;
+    display: inline-block;
+}
+
+.rounded-corners {
+    border-radius: 5px; /* Adjust the border-radius for rounded corners */
+}
+
+.forest1{
+    width: 80%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+@media screen and (max-width:1160px) {
+    .forest1 {
+        width: 100%;
+        height: 400px;
+    }    
+}
+
+/*Sri Lankan Leopard*/
+
+.imgleps{
+    max-width: 320px;
+    float: left;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-right: 15px;
+ }
+ 
+ .wrapper{
+   margin: 125px auto;
+   width: 70%;
+ }
+ 
+ .text-box{
+   color: rgb(0, 0, 0);
+ }
+ 
+ .text-box h2{
+   font-size: 42px;
+ }
+ 
+ .text-box p{
+   font-size: 25px;
+ }
+
+
+
+
+.venue-description p {
+    margin-bottom: 15px;
+}
+
+.threat-info {
+    margin-top: 15px;
+}
+
+.conservation-link {
+    color: #009900;
+    text-decoration: none;
+}
+
+.conservation-link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.forest2 {
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.main5{
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.main5 p{
+    font-size: 25px;
+}
+
+.main52{
+    text-align: center;
+    font-size: 25px;
+}
+
+.ul5 {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    text-align: center;
+}
+
+.li5 {
+    display: inline-block;
+    margin: 10px; /* Adjust margin for spacing between buttons */
+    background-color: green;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for button size */
+    border-radius: 50px; /* Make it oval */
+    transition: background-color 0.3s ease; /* for a smooth transition effect */
+}
+
+.li5:hover {
+    background-color: lightgreen; /* Change color on hover */
+}
+
+/*Srilankan Leopard*/
+.gallery2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 10px;
+    padding-top: 20px;
+}
+  
+.gallery__item2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.gallery__item2 > img { /* > child combinatior, selects the direct children, -- is a class selector*/
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+  
+.gallery__item--hor2 {
+    grid-column: span 2; /*span 2 means it should span across 2 columns*/
+}
+  
+.gallery__item--vert2 {
+    grid-row: span 2;
+}
+  
+.gallery__item--lg2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery__item2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+/*Animals In Srilanka*/
+.imgani {
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+    transition: 0.7s;
+}
+
+.bodyani {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cards3 {
+    position: relative;
+    flex: 1; /* Added to make the cards take equal width on smaller screens */
+    height: 350px;
+    margin: 10px; /* Reduced margin for smaller screens */
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.intro {
+    height: 70px;
+    width: 350px; /* Full width on smaller screens */
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, -3);
+    color: black;
+    transition: 0.5s;
+    bottom: 0;
+    
+}
+
+.h1ani {
+    margin: 10px;
+    font-size: 25px;
+    position: relative;
+    font-weight: bolder;
+    z-index: 2;
+    
+}
+
+.h1ani::before {
+    content: ''; /*pseudo-element */
+    position: absolute;
+    top: 50%; /* the vertical position as needed */
+    left: 0;
+    width: 100%;
+    height: 50px; /* the height of the bar */
+    background: rgba(219, 216, 216, 0.5); /* Background color with some transparency for the blur effect */
+    filter: blur(-10px); /*blur effect to the bar */
+    transform: translateY(-50%); /* Center the bar vertically */
+    z-index: -1;
+}
+
+.pani {
+    font-size: 18px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cards3:hover {
+    cursor: pointer;
+}
+
+.cards3:hover .intro {
+    height: 220px;
+    bottom: 0px;
+    background: #aedfad;
+}
+
+li{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.cards3:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cards3:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .cards3 {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+    .cards3 {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+
+.sectionani2{
+    padding-bottom: 120px;
+}
+
+.sectionani3{
+    padding-top: 95px;
+}
+
+.bodyfooter{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bodyfull{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+}
+.rowf{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ulf{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0; 
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter h2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-right: 25px;
+}
+
+
+.newsletter form{
+    margin: 20px 0px;
+}
+
+.newsletter form input{
+    height: 40px;
+    width: 17vw;
+    padding: 0 15px;
+    outline: none;
+}
+
+.newsletter form button{
+    height: 40px;
+    width: 5rem;
+    color:white;
+    background-color: #3adb37; 
+    border: none;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: aquamarine;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #46a36a;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+

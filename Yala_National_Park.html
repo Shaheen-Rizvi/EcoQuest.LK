@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Overlock+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+    <title>Yala National Park</title>
+    <link rel="stylesheet" href="../css/yala.css">
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <div class="logout-btn-container">
+                <a href="login.html" class="logout-btn">Log Out</a>
+            </div>
+
+            <section class="navyala">
+                <nav>
+                    <p>.</p>
+                    <img src="../images/logo_nobg.png" alt="" class="logo">
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./Srilankan_wildlife_introduction.html">Sri Lanka Wildlife Introduction</a>
+                        </li>
+                        <li><a href="./Department_of_wildlife_conservation.html">Department Of Wildlife
+                                Conservation</a></li>
+                        <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a></li>
+                        <li><a href="./Animals_in_Srilanka.html">Animals In Sri Lanka</a></li>
+                        <li><a href="./Yala_National_Park.html">Yala National Park</a></li>
+                        <li><a href="./Wilpatu_National_Park.html">Wilpattu National Park</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section x-data="ynpData">
+                <div class="content">
+                    <div class="info">
+                        <h2 x-text="h21"></h2>
+                        <p x-text="p1"></p>
+                        <a href="https://en.wikipedia.org/wiki/Yala_National_Park" class="info-btn">More Info</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/shaheen.rizvi.3344"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_shaheen.rv?igsh:anliYWY3OXBnNGlo"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <section>
+                    <section>
+                        <h2 x-text="h22" class="mainh2 h2main"></h2>
+
+                        <section class="wrapper">
+                            <img class="imgleps" src="../images/yalap1.jpg" alt="leps1">
+                            <section class="text-box">
+                                <h2 x-text="h23"></h2>
+                                <p x-text="p2"> </p>
+                            </section>
+                        </section>
+
+                        <section class="wrapper">
+                            <img class="imgleps" src="../images/yalap2.jpg" alt="leps2">
+                            <section class="text-box">
+                                <h2 x-text="h24"></h2>
+                                <p x-text="p3"> </p>
+
+                            </section>
+                        </section>
+
+                        <section class="wrapper">
+                            <img class="imgleps" src="../images/yalap3.jpg" alt="leps3">
+                            <section class="text-box">
+                                <h2 x-text="h25"></h2>
+                                <p x-text="p4"></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h2 class="mainh2 h2main h2yala">Attractions Of Yala National Park</h2>
+                        <section class="mycontainer">
+                            <section class="wrapper2">
+                                <section class="container">
+                                    <input type="radio" name="slide" id="c1" checked>
+                                    <label for="c1" class="card">
+                                        <section class="row">
+                                            <section class="icon">1</section>
+                                            <section class="description">
+                                                <h4>Main Gate</h4>
+                                                <p>The Entrance Of The Park</p>
+                                            </section>
+                                        </section>
+                                    </label>
+                                    <input type="radio" name="slide" id="c2">
+                                    <label for="c2" class="card">
+                                        <section class="row">
+                                            <section class="icon">2</section>
+                                            <section class="description">
+                                                <h4>Leopards</h4>
+                                                <p>One Of The Main Attractions Of The Park</p>
+                                            </section>
+                                        </section>
+                                    </label>
+                                    <input type="radio" name="slide" id="c3">
+                                    <label for="c3" class="card">
+                                        <section class="row">
+                                            <section class="icon">3</section>
+                                            <section class="description">
+                                                <h4>Peacock</h4>
+                                                <p>Discover The Amazing Beauty Of The Sri Lankan Peackocks</p>
+                                            </section>
+                                        </section>
+                                    </label>
+                                    <input type="radio" name="slide" id="c4">
+                                    <label for="c4" class="card">
+                                        <section class="row">
+                                            <section class="icon">4</section>
+                                            <section class="description">
+                                                <h4>Elephants</h4>
+                                                <p>Feast Your Eyes With These Gentle Giants Strolling</p>
+                                            </section>
+                                        </section>
+                                    </label>
+                                </section>
+                            </section>
+                        </section>
+                        <h2 class="mainh2 h2main h2yala">Image Gallery</h2>
+                        <section class="mainyala3">
+                            <section class="content2yala">
+                                <section class="content2">
+                                    <span style="--i:1"><img src="../images/img1.jpg" alt=""></span>
+                                    <span style="--i:2"><img src="../images/img2.jpg" alt=""></span>
+                                    <span style="--i:3"><img src="../images/img3.jpg" alt=""></span>
+                                    <span style="--i:4"><img src="../images/img4.jpg" alt=""></span>
+                                    <span style="--i:5"><img src="../images/img5.jpg" alt=""></span>
+                                    <span style="--i:6"><img src="../images/img6.jpg" alt=""></span>
+                                    <span style="--i:7"><img src="../images/img7.jpg" alt=""></span>
+                                    <span style="--i:8"><img src="../images/img8.jpg" alt=""></span>
+                                </section>
+                            </section>
+                        </section>
+                        <section>
+                            <p class="bottomp">Including Sri Lankan elephant, 44 species of mammals are resident in Yala
+                                National Park, and it has one of the highest leopard densities in the world.<br> The
+                                elephant herd of Yala contains 300 to 350 individuals.<br>The reptile fauna recorded
+                                from
+                                the park is 47 and six of them are endemic. <br>Yala is one of the 70 Important Bird
+                                Areas
+                                (IBAs) in Sri Lanka.</p>
+                        </section>
+                        <br>
+                        <hr>
+                        <br>
+                        <section class="mapyala">
+                            <h2 class="mainh2 h2main h2yala">Where Is It Situated?</h2>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15857.817998947383!2d81.4718847!3d6.4639613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1705159504752!5m2!1sen!2slk"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <figcaption class="figyala">Location Of Yala National Park</figcaption>
+                        </section>
+                        <hr>
+                        <section class="mapyala">
+                            <h2 class="mainh2 h2main h2yala">Video Walkthrough</h2>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/N7Ya73daBG8?si=WyilmPEJWcaa66lf"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <figcaption class="figyala">Watch To Find More Infomation</figcaption>
+                            <hr>
+                        </section>
+                        <button id="editContentButton">
+                            <i class='bx bx-edit-alt'></i>
+                        </button>
+
+                        <section class="bodyfull">
+                            <section class="bodyfooter">
+                                <footer class="footer">
+                                    <section class="newsletter">
+                                        <h2>Subscribe To Our Newsletter!</h2>
+                                        <form onsubmit="storeNewsLetter(); return false;">
+                                            <i class="ri-mail-line"></i>
+                                            <input type="email" id="emailInput" placeholder="Enter Your Email" required>
+                                            <button type="submit" id="submitNewsletteer">Submit<i
+                                                    class="ri-arrow-right-line"></i></button>
+                                        </form>
+                                    </section>
+                                    <script>
+                                        function storeNewsLetter() {
+                                            let email = document.getElementById("emailInput").value;
+
+                                            let getEmail = JSON.parse(localStorage.getItem("newsLetter")) || [];
+
+                                            if (getEmail.some(v => v.email === email)) {
+                                                alert("Duplicate Email")
+                                            } else {
+                                                getEmail.push({
+                                                    "email": email,
+                                                });
+                                                localStorage.setItem("newsLetter", JSON.stringify(getEmail));
+                                                alert("Registration Successful")
+                                            }
+                                        }
+                                    </script>
+                                    <div class="containerf">
+                                        <div class="rowf">
+                                            <div class="footer-col">
+                                                <h4>Our Site</h4>
+                                                <ul class="ulf">
+                                                    <li><a href="./index.html">Home</a></li>
+                                                    <li><a href="./Srilankan_wildlife_introduction.html">Sri Lanka
+                                                            Wildlife Introduction</a></li>
+                                                    <li><a href="./Department_of_wildlife_conservation.html">Departmeent
+                                                            Of Wildlife Conservation</a></li>
+                                                    <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-col">
+                                                <h4>Animals In Sri Lankan</h4>
+                                                <ul class="ulf">
+                                                    <li><a href="./Animals_in_Srilanka.html">Endemic Animals</a>
+                                                    </li>
+                                                    <li><a href="./Yala_National_Park.html">Yala National Park</a>
+                                                    </li>
+                                                    <li><a href="./Wilpatu_National_Park.html">Wilpattu National
+                                                            Park</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-col">
+                                                <h4>Learn More</h4>
+                                                <ul class="ulf">
+                                                    <li><a
+                                                            href="https://www.onthegotours.com/Sri-Lanka/Guides/Wildlife-in-Sri-Lanka">Sri
+                                                            Lankan Wildlife</a></li>
+                                                    <li><a href="https://www.sltda.gov.lk/en/tourist-attractions">Tourist
+                                                            Attractions In Sri Lanka</a></li>
+                                                    <li><a
+                                                            href="https://www.roughguides.com/articles/10-sri-lankan-foods-you-need-to-try/">Must
+                                                            Eat Foods In Sri Lanka</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-col">
+                                                <h4>follow us</h4>
+                                                <div class="social-links">
+                                                    <a href="https://www.facebook.com/shaheen.rizvi.3344"><i
+                                                            class="fab fa-facebook-f"></i></a>
+                                                    <a
+                                                        href="https://www.instagram.com/_shaheen.rv?igsh:anliYWY3OXBnNGlo"><i
+                                                            class="fab fa-instagram"></i></a>
+                                                    <a href="www.linkedin.com/in/shaheen-rizvi-32a90b25a"><i
+                                                            class="fab fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <script src="./yala.js"></script>
+
+</body>
+
+</html>
+
+<!--References:
+Images taken from www.pexels.com and google images.
+Content for the page was generated by Ai, www.wikipedia.com.
+Map was embeded from Google Maps.
+Youtube video was embeded from Youtube.-->
