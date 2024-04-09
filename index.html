@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife In Sri Lanka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Overlock+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logout-btn-container">
+            <a href="login.html" class="logout-btn">Log Out</a>
+        </div>
+        <h1>Sri Lankan Wildlife With EcoQuest</h1>
+        <img src="./images/logo_nobg.png" alt="logo" class="logo">
+        <h2>Explore The Diverse Wildlife Of Sri Lanka</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Srilankan_wildlife_introduction.html">Sri Lankan Wildlife Introduction</a></li>
+            <li><a href="./Department_of_wildlife_conservation.html">Department Of Wildlife Conservation</a></li>
+            <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a></li>
+            <li class="dropdown">
+                <span>Animals in Sri Lanka</span>
+                <div class="dropdown-content">
+                    <a href="./Animals_in_Srilanka.html">Animals In Sri Lanka</a>
+                    <a href="./Yala_National_Park.html">Yala National Park</a>
+                    <a href="./Wilpatu_National_Park.html">Wilpattu National Park</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section x-data="indexdata">
+            <img src="../images/forest.jpg" class="forest">
+            <section class="container23">
+                <section class="card23">
+                    <img src="../images/srilankaa (1).jpg" alt="srilanka">
+                    <div class="card-overlay23">
+                        <h2 x-text="h21"></h2>
+                        <p x-text="p1"></p>
+                        <p x-text="p2"></p>
+                        <h3>Why Choose EcoQuest?</h3>
+                        <p x-text="p3"></p>
+                        <p x-text="p4"></p>
+                        <p x-text="p5"></p>
+                        <p x-text="p6"></p>
+                </section>
+
+                <section class="card23">
+                    <img src="../images/notbeach.jpg" alt="war">
+                    <div class="card-overlay23">
+                        <h2 x-text="h22"></h2>
+
+                        <p x-text="p7"></p>
+                        <p x-text="p8"></p>
+                        <h3>Discover the Diverse Wildlife</h3>
+                        <p x-text="p9"></p>
+                        <p x-text="p10"></p>
+                        <p x-text="p11"></p>
+                    </div>
+                </section>
+
+                <section class="card23">
+                    <img src="../images/deer.jpg" alt="deer">
+                    <div class="card-overlay23">
+                        <h2 x-text="h23"></h2>
+                        <p x-text="p12"></p>
+                    </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h1 class="h21">Wildlife in Sri lanka</h1>
+            </section>
+
+            <section class="cardbox">
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <div class="card card1">
+                            <h2>Native<br>Species</h2>
+                            <ul>
+                                <li x-text="li1">Sri Lanka Elephant</li>
+                                <li x-text="li2">Colorful Peafowl</li>
+                                <li x-text="li3">Sri Lanka Junglefowl</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card2">
+
+                            <h2>Endangered Species</h2>
+
+                            <ul>
+                                <li x-text="li4">Sri Lanka Leopard</li>
+                                <li x-text="li5">Loggerhead Sea Turtle</li>
+                                <li x-text="li6">Red-faces Malkoha</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card3">
+                            <h2>Protected Reserves</h2>
+                            <ol id="protected">
+                                <li x-text="li7"><strong>Wilpattu National Park</strong></li>
+                                <li x-text="li8"><strong>Yala National Park</strong></li>
+                                <li x-text="li9"><strong>Forest Reserve</strong> </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <button id="editContentButton" style="display: none;">
+            <i class='bx bx-edit-alt'></i>
+        </button>
+
+    </main>
+
+    <section class="bodyfull">
+        <section class="bodyfooter">
+            <footer class="footer">
+                <section class="newsletter">
+                    <h2>Subscribe To Our Newsletter!</h2>
+                    <form onsubmit="storeNewsLetter(); return false;">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="emailInput" placeholder="Enter Your Email" required>
+                        <button type="submit" id="submitNewsletteer">Submit<i class="ri-arrow-right-line"></i></button>
+                    </form>
+                </section>
+                <script>
+                    function storeNewsLetter() {
+                        let email = document.getElementById("emailInput").value;
+
+                        let getEmail = JSON.parse(localStorage.getItem("newsLetter")) || [];
+
+                        if (getEmail.some(v => v.email === email)) {
+                            alert("Duplicate Email")
+                        } else {
+                            getEmail.push({
+                                "email": email,
+                            });
+                            localStorage.setItem("newsLetter", JSON.stringify(getEmail));
+                            alert("Registration Successful")
+                        }
+                    }
+                </script>
+                </div>
+                <div class="containerf">
+                    <div class="rowf">
+                        <div class="footer-col">
+                            <h4>Our Site</h4>
+                            <ul class="ulf">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./Srilankan_wildlife_introduction.html">Sri Lanka Wildlife
+                                        Introduction</a></li>
+                                <li><a href="./Department_of_wildlife_conservation.html">Departmeent Of Wildlife
+                                        Conservation</a></li>
+                                <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Animals In Sri Lankan</h4>
+                            <ul class="ulf">
+                                <li><a href="./Animals_in_Srilanka.html">Endemic Animals</a></li>
+                                <li><a href="./Yala_National_Park.html">Yala National Park</a></li>
+                                <li><a href="./Wilpatu_National_Park.html">Wilpattu National Park</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Learn More</h4>
+                            <ul class="ulf">
+                                <li><a href="https://www.onthegotours.com/Sri-Lanka/Guides/Wildlife-in-Sri-Lanka">Sri
+                                        Lankan Wildlife</a></li>
+                                <li><a href="https://www.sltda.gov.lk/en/tourist-attractions">Tourist Attractions In Sri
+                                        Lanka</a></li>
+                                <li><a href="https://www.roughguides.com/articles/10-sri-lankan-foods-you-need-to-try/">Must
+                                        Eat Foods In Sri Lanka</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/shaheen.rizvi.3344"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/_shaheen.rv?igsh:anliYWY3OXBnNGlo"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="www.linkedin.com/in/shaheen-rizvi-32a90b25a"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </section>
+
+    <!-- <script>
+        const indexdata={
+            "h21":"",
+            "h22":"",
+            "h23":"",
+            "p1":"",
+            "p2":"",
+            "p3":"",
+            "p4":"",
+            "p5":"",
+            "p6":"",
+            "p7":"",
+            "p8":"",
+            "p9":"",
+            "p10":"",
+            "p11":"",
+            "p12":"",
+            "li1":"",
+            "li2":"",
+            "li3":"",
+            "li4":"",
+            "li5":"",
+            "li6":"",
+            "li7":"",
+            "li8":"",
+            "li9":"",
+        }
+
+        fetch('indexpage.json')
+            .then(response => response.json())
+            .then(data => {
+                indexdata.h21 = data.h21;
+                indexdata.h22=data.h22;
+                indexdata.h23=data.h23;
+                indexdata.p1=data.p1;
+                indexdata.p2=data.p2;
+                indexdata.p3=data.p3;
+                indexdata.p4=data.p4;
+                indexdata.p5=data.p5;
+                indexdata.p6=data.p6;
+                indexdata.p7=data.p7;
+                indexdata.p8=data.p8;
+                indexdata.p9=data.p9;
+                indexdata.p10=data.p10;
+                indexdata.p11=data.p11;
+                indexdata.p12=data.p12;
+                indexdata.li1=data.li1;
+                indexdata.li2=data.li2;
+                indexdata.li3=data.li3;
+                indexdata.li4=data.li4;
+                indexdata.li5=data.li5;
+                indexdata.li6=data.li6;
+                indexdata.li7=data.li7;
+                indexdata.li8=data.li8;
+                indexdata.li9=data.li9;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+    </script>-->
+
+
+    
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
+
+<!--References:
+Images taken from www.pexels.com and google images.
+Content for the page was generated by Ai.-->

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Of Wildlife Conservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Overlock+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logout-btn-container">
+            <a href="login.html" class="logout-btn">Log Out</a>
+        </div>
+        <h1>Sri Lankan Wildlife With EcoQuest</h1>
+        <img src="../images/logo_nobg.png" alt="logo" class="logo">
+        <h2>Explore The Diverse Wildlife Of Sri Lanka</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Srilankan_wildlife_introduction.html">Sri Lankan Wildlife Introduction</a></li>
+            <li><a href="./Department_of_wildlife_conservation.html">Department Of Wildlife Conservation</a></li>
+            <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a></li>
+            <li class="dropdown">
+                <span>Animals in Sri Lanka</span>
+                <div class="dropdown-content">
+                    <a href="./Animals_in_Srilanka.html">Animals In Sri Lanka</a>
+                    <a href="./Yala_National_Park.html">Yala National Park</a>
+                    <a href="./Wilpatu_National_Park.html">Wilpattu National Park</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="main3h1">
+        <h1>Department Of Wildlife Conservation</h1>
+    </section>
+
+    <main class="main3">
+        <section x-data="dwcData">
+            <section>
+                <p x-text="p1">
+
+                </p>
+
+                <p x-text="p2">
+
+                </p>
+
+                <p x-text="p3">
+
+                </p>
+
+                <p x-text="p4">
+
+                </p>
+
+                <a href="https://www.dwc.gov.lk/" target="_blank" class="read-more">Read More</a>
+            </section>
+            <hr>
+
+            <section class="gallery">
+                <section class="gallery-item">
+                    <img src="../images/dep1.jpg" alt="dep1">
+                    <figcaption x-text="f1"></figcaption>
+                </section>
+                <section class="gallery-item">
+                    <img src="../images/dep2.jpg" alt="dep2">
+                    <figcaption x-text="f2"></figcaption>
+                </section>
+                <section class="gallery-item">
+                    <img src="../images/dep3.jpg" alt="dep3">
+                    <figcaption x-text="f3"></figcaption>
+                </section>
+
+            </section>
+            <hr>
+            <section class="map3">
+                <h2>How Do I Learn More?</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028004.2225828776!2d78.65073811062098!3d6.897092700000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704948671162!5m2!1sen!2slk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr>
+                <figcaption>Location Of The Department Of Wildlife Conservation In Sri Lanka</figcaption>
+            </section>
+            <hr>
+            <section>
+                <iframe width="97%" height="350" src="https://www.youtube.com/embed/D8TZlNXqvwE?si=tzVB3o_rMB4dtx08"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <hr>
+                <figcaption>Watch To Find More Infomation</figcaption>
+                <hr>
+            </section>
+        </section>
+        <button id="editContentButton">
+            <i class='bx bx-edit-alt'></i>
+        </button>
+    </main>
+
+    <section class="bodyfull">
+        <section class="bodyfooter">
+            <footer class="footer">
+                <section class="newsletter">
+                    <h2>Subscribe To Our Newsletter!</h2>
+                    <form onsubmit="storeNewsLetter(); return false;">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="emailInput" placeholder="Enter Your Email" required>
+                        <button type="submit" id="submitNewsletteer">Submit<i class="ri-arrow-right-line"></i></button>
+                    </form>
+                </section>
+                <script>
+                    function storeNewsLetter() {
+                        let email = document.getElementById("emailInput").value;
+
+                        let getEmail = JSON.parse(localStorage.getItem("newsLetter")) || [];
+
+                        if (getEmail.some(v => v.email === email)) {
+                            alert("Duplicate Email")
+                        } else {
+                            getEmail.push({
+                                "email": email,
+                            });
+                            localStorage.setItem("newsLetter", JSON.stringify(getEmail));
+                            alert("Registration Successful")
+                        }
+                    }
+                </script>
+                <div class="containerf">
+                    <div class="rowf">
+                        <div class="footer-col">
+                            <h4>Our Site</h4>
+                            <ul class="ulf">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./Srilankan_wildlife_introduction.html">Sri Lanka Wildlife
+                                        Introduction</a></li>
+                                <li><a href="./Department_of_wildlife_conservation.html">Departmeent Of Wildlife
+                                        Conservation</a></li>
+                                <li><a href="./Srilankan_Leopard.html">Sri Lankan Leopard</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Animals In Sri Lankan</h4>
+                            <ul class="ulf">
+                                <li><a href="./Animals_in_Srilanka.html">Endemic Animals</a></li>
+                                <li><a href="./Yala_National_Park.html">Yala National Park</a></li>
+                                <li><a href="./Wilpatu_National_Park.html">Wilpattu National Park</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Learn More</h4>
+                            <ul class="ulf">
+                                <li><a href="https://www.onthegotours.com/Sri-Lanka/Guides/Wildlife-in-Sri-Lanka">Sri
+                                        Lankan Wildlife</a></li>
+                                <li><a href="https://www.sltda.gov.lk/en/tourist-attractions">Tourist Attractions In Sri
+                                        Lanka</a></li>
+                                <li><a href="https://www.roughguides.com/articles/10-sri-lankan-foods-you-need-to-try/">Must
+                                        Eat Foods In Sri Lanka</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/shaheen.rizvi.3344"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/_shaheen.rv?igsh:anliYWY3OXBnNGlo"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="www.linkedin.com/in/shaheen-rizvi-32a90b25a"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </section>
+
+    <script src="./department.js"></script>
+
+</body>
+
+</html>
+
+<!--References:
+Images taken from www.pexels.com and google images.
+Content for the page was generated by Ai, dwc.gov.lk.
+Map was embeded from Google Maps.
+Youtube video was embeded from Youtube.-->
